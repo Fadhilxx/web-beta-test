@@ -1,67 +1,24 @@
-<!DOCTYPE HTML><html lang="en">
+<html>
 <head>
-<title>Fadhillx site</title>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<meta name="color-scheme" content="light only"/>
-<meta property="og:title" content="Fadhillx site"/>
-<meta property="og:type" content="website"/>
-<meta property="og:description" content="Memilikimu itu mudah, kamu nya mau apa engga itu yg bingung"/>
-<meta property="og:image" content="https://i.ibb.co/4gPnvk3/image-X.jpg"/>
-<meta property="og:url" content="https://frgivnx.inc"/>
-<link href="https://fonts.googleapis.com/css2?display=swap&family=Lexend:ital,wght@0,400;1,400&family=Inter:ital,wght@0,400;1,400" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="style.css">
 <script>
-    alert("Biar apa? Biarin")
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
 </script>
 </head>
 <body>
-<script src="svg.js"></script>
-<div id="wrapper">
-	<div id="main">
-		<div class="inner">
-			<div id="container01" class="container default">
-				<div class="wrapper">
-					<div class="inner">
-						<div id="image01" class="image">
-							<span class="frame"><img src="https://i.ibb.co/4gPnvk3/image-X.jpg" alt=""/></span>
-						</div>
-						<h1 id="text02">Fadhil</h1>
-						<p id="text01">Mengharapkanmu membuatku tersiksa dalam senyap.</p>
-						<hr id="divider02" class="style1 full">
-						<ul id="buttons01" class="buttons">
-							<li>
-								<a href="https://t.me/frgivnxGC" class="button n01"><svg><use xlink:href="#icon-96fc68818d10374399c6dcf28fe98f75"></use></svg><span class="label">Group</span></a>
-							</li>
-							<li>
-								<a href="go" class="button n02"><svg><use xlink:href="#icon-c6f1ad9e8afe210cf10e8df8e4c537f6"></use></svg><span class="label">Tap Me</span></a>
-							</li>
-						</ul>
-						<hr id="divider01" class="style1 full">
-						<ul id="icons01" class="icons">
-							<li>
-								<a class="n01" href="https://wa.me/62895612458445" aria-label="WhatsApp"><svg><use xlink:href="#icon-e9633646f45121eab610a3d30c929019"></use></svg><span class="label">WhatsApp</span></a>
-							</li>
-							<li>
-								<a class="n02" href="https://instagram.com/fadhillx_" aria-label="Instagram"><svg><use xlink:href="#icon-85976685de3e4af37529a1ce5d57d2a7"></use></svg><span class="label">Instagram</span></a>
-							</li>
-							<li>
-								<a class="n03" href="https://tiktok.com/@fadhillx_" aria-label="TikTok"><svg><use xlink:href="#icon-694b338299bf630d8d2ec9bd42d31dbe"></use></svg><span class="label">TikTok</span></a>
-							</li>
-							<li>
-								<a class="n05" href="https://github.com/Fadhilxx" aria-label="GitHub"><svg><use xlink:href="#icon-8c4b37645de3c276d895d87df51ba614"></use></svg><span class="label">GitHub</span></a>
-							</li>
-							<li>
-								<a class="n04" href="mailto:guefadhilx@gmail.com" aria-label="Email"><svg><use xlink:href="#icon-c3c8e1063e3b7f84f6b54712741de139"></use></svg><span class="label">Email</span></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script src="index.js"></script>
+    
+  <div id="Page1">
+    Content of page 1
+    <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
+  </div>
+    
+  <div id="Page2" style="display:none">
+    Content of page 2
+    <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
+  </div>
+    
 </body>
 </html>
