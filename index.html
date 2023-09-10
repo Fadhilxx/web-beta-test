@@ -1,5 +1,45 @@
+<!DOCTYPE html>
+
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    
+    <title>Fadhilx Link's</title>
+    <meta property="og:image" name="og:image" content="https://i.ibb.co/4gPnvk3/image-X.jpg">
+    <meta property="og:description" name="og:description" content="Yeah.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+
+    <img id="userPhoto" src="https://i.ibb.co/Xt0GX7D/kentang.webp" alt="HOH">
+
+    <a href="https://www.instagram.com/fadhillx_" id="userName">Fadhilx Here</a>
+    <a id="dezk">Silahkan di check-out😁🙏</a>
+    
+    <div id="Page1">
+
+      Content of page 1
+    <a href="Page2" onclick="return show('Page2','Page1');">Show page 2</a>
+    </div>
+    
+    <div id="Page2" style="display:none">
+       <div id="links">
+        <a class="link" href="contact" target="_blank">Contact me!</a>
+        <a class="link" href="https://frgivnx.my.id/donate" target="_blank">Support me.</a>
+       </div>
+       Content of page 2
+    <a href="Page1" onclick="return show('Page1','Page2');">Show page 1</a>
+    </div>
+
+    <!-- Javascript -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="index.js"></script>
+
+</body>
+
 <script>
 function show(shown, hidden) {
   document.getElementById(shown).style.display='block';
@@ -7,18 +47,4 @@ function show(shown, hidden) {
   return false;
 }
 </script>
-</head>
-<body>
-    
-  <div id="Page1">
-    Content of page 1
-    <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
-  </div>
-    
-  <div id="Page2" style="display:none">
-    Content of page 2
-    <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
-  </div>
-    
-</body>
 </html>
